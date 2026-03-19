@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+  /* Agro connect pallet */
+  --primary-color: #122417;
+  --secondary-color: #267224;
+  --secondary-opacity: #27722442;
+  --tertiary-color: #7abe55;
+  --tertiary-opacity: #7abe5542;
+
+  /* Utility colors */
+  --red: #dd1133;
+
+  /* Backgrounds */
+  --background-color: #dddddd;
+  --card-bg-green: rgb(155, 211, 123);
+  --card-bg-red: rgb(226, 151, 151);
+  --card-bg-blue: rgb(117, 146, 214);
+
+  /* Texts */
+  --text-color: #19191919;
+  --text-light-color: #ffffff;
+  --card-text-green: #267224;
+  --card-text-red: #af1d1f;
+  --card-text-blue: #0521ac;
+}
+
+.main-background-color {
+  background-color: var(--background-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-secondary-opacity {
+  background-color: var(--secondary-opacity) !important;
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color) !important;
+}
+
+.bg-tertiary-opacity {
+  background-color: var(--secondary-opacity) !important;
+}
+
+.bg-green {
+  background-color: var(--card-bg-green) !important;
+}
+.bg-red {
+  background-color: var(--card-bg-red) !important;
+}
+.bg-blue {
+  background-color: var(--card-bg-blue) !important;
+}
+
+.color-primary {
+  color: var(--primary-color) !important;
+}
+
+.color-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.color-tertiary {
+  color: var(--tertiary-color) !important;
+}

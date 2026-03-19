@@ -1,0 +1,108 @@
+/* Modal tutorial */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 600px;
+  max-width: 90%;
+  position: relative;
+}
+
+#closeModal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#modalImg {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.modal-tutorial {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+.modal-tutorial.open {
+  display: flex;
+}
+.tutorial-content {
+  background: white;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* fale conosco widget */
+.fale-conosco {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+}
+
+#chat-ball {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: bounce 1s infinite;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+#chat-content {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 250px;
+  animation: slideUp 0.4s ease forwards;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

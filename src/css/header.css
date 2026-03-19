@@ -1,0 +1,38 @@
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--tertiary-color) !important;
+  font-weight: 500 !important;
+  margin-left: 1rem !important;
+  font-size: 1.3rem !important;
+}
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+.nav-link:focus {
+  color: var(--secondary-color) !important;
+}
+
+.active {
+  color: var(--tertiary-color) !important;
+  text-decoration: underline !important;
+}
+
+.separator_bar {
+  background-color: var(--tertiary-color);
+  width: 3px;
+  height: 60px;
+}
+
+.agro-title {
+  color: var(--tertiary-color);
+  -webkit-text-stroke: 3px var(--secondary-color);
+  font-size: 3.5rem;
+}
+
+.navbar-toggler {
+  color: transparent !important;
+  border: 0px solid transparent !important;
+}
