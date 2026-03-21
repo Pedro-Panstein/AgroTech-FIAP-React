@@ -26,8 +26,8 @@ function FaleConoscoWidget() {
           ></button>
           <h5 className="mt-2">Precisa de ajuda?</h5>
           <p>Fale conosco e tire suas dúvidas!</p>
-          <NavLink to="fale_conosco" className="btn btn-success">
-            Financeiro
+          <NavLink to="/fale-conosco" className="btn btn-success">
+            Fale Conosco
           </NavLink>
         </div>
       )}
