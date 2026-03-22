@@ -7,7 +7,6 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import "./css/index.css";
 import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
 import Vendas from "./pages/Vendas.jsx";
@@ -16,6 +15,7 @@ import FaleConosco from "./pages/FaleConosco.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./css/index.css";
 import { useState } from "react";
 import Header from "./pages/Components/Header.jsx";
 import Finances from "./pages/Finances.jsx";
