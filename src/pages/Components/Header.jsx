@@ -44,7 +44,7 @@ function Header() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="#" className="nav-link">
+              <NavLink to="/financeiro" className="nav-link">
                 Financeiro
               </NavLink>
             </li>
