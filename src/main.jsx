@@ -44,12 +44,33 @@ function App() {
             )
           }
         />
-        <Route path="/" element={username ? <Home /> : <Navigate to="/login" />}/>
-        <Route path="/login" element={!username ? <Login setUsername={setUsername} /> : <Navigate to="/" />}/>
-        <Route path="/vendas" element={username ? <Vendas /> : <Navigate to="/login" />}/>
-        <Route path="/calculadora" element={username ? <Calculadora /> : <Navigate to="/login" />}/>
+        <Route
+          path="/"
+          element={username ? <Home /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/login"
+          element={
+            !username ? (
+              <Login setUsername={setUsername} />
+            ) : (
+              <Navigate to="/" />
+            )
+          }
+        />
+        <Route
+          path="/vendas"
+          element={username ? <Vendas /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/calculadora"
+          element={username ? <Calculadora /> : <Navigate to="/login" />}
+        />
         <Route path="*" element={<NotFound />} />
-        <Route path="/financeiro" element={<Finances />} />
+        <Route
+          path="/financeiro"
+          element={username ? <Finances /> : <Navigate to="/login" />}
+        />
       </Routes>
     </BrowserRouter>
   );
