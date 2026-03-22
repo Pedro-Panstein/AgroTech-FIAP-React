@@ -137,3 +137,94 @@
 .color-tertiary {
   color: var(--tertiary-color) !important;
 }
+
+/* ================================================
+   Vendas & Calculadora
+   ================================================ */
+
+.card-bg-green {
+  background: radial-gradient(
+    circle 300px at center,
+    var(--tertiary-color),
+    var(--secondary-opacity)
+  );
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card-bg-red {
+  background: radial-gradient(
+    circle 300px at center,
+    rgba(255, 0, 0, 0.3),
+    rgba(226, 139, 139, 0.2)
+  );
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.card-bg-blue {
+  background: radial-gradient(
+    circle 300px at center,
+    rgba(0, 0, 255, 0.3),
+    rgba(113, 125, 233, 0.2)
+  );
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.card-text-green {
+  color: var(--card-text-green) !important;
+}
+.card-text-red {
+  color: var(--card-text-red) !important;
+}
+.card-text-blue {
+  color: var(--card-text-blue) !important;
+}
+
+.caixa-resumo {
+  border: 2px solid var(--primary-color) !important;
+  font-weight: 800 !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.caixa-resumo .card-header {
+  background-color: var(--tertiary-color) !important;
+  color: var(--primary-color) !important;
+  font-weight: 900 !important;
+}
+
+.caixa-resumo .card-body {
+  background-color: #ffffff !important;
+  color: var(--secondary-color) !important;
+  font-weight: 900 !important;
+}
+
+.tabela-card {
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.tabela-card .card-header {
+  background-color: #11410f !important;
+  color: #ffffff !important;
+  font-weight: 900;
+}
+
+.tabela-card thead {
+  background-color: #82bb81 !important;
+  color: var(--secondary-color) !important;
+}
+
+#btn-salvar {
+  background-color: var(--secondary-color) !important;
+  color: white !important;
+  text-transform: uppercase !important;
+  font-weight: 900 !important;
+  border-radius: 14px !important;
+}
+
