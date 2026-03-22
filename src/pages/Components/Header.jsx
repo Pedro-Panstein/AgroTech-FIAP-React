@@ -5,9 +5,9 @@ import "../../css/header.css";
 
 function Header() {
   return (
-    <header className="navbar navbar-expand-lg p-2">
+    <header className="p-2 navbar navbar-expand-lg">
       <div className="container-fluid">
-        <div className="navbar-brand d-flex align-items-center gap-3">
+        <div className="gap-3 navbar-brand d-flex align-items-center">
           <img
             src={logo}
             alt="Logo AC"
@@ -15,7 +15,7 @@ function Header() {
             height="80"
             className="p-1"
           />
-          <span className="separator_bar mx-2 d-none d-md-inline"></span>
+          <span className="mx-2 separator_bar d-none d-md-inline"></span>
           <span className="agro-title fw-bold d-none d-md-inline">
             AGRO CONNECT
           </span>

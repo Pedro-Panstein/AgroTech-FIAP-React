@@ -1,5 +1,5 @@
 .navbar {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 
 .nav-link {
@@ -21,15 +21,15 @@
 }
 
 .separator_bar {
-  background-color: var(--tertiary-color);
-  width: 3px;
-  height: 60px;
+  background-color: var(--tertiary-color) !important;
+  width: 3px !important;
+  height: 60px !important;
 }
 
 .agro-title {
-  color: var(--tertiary-color);
-  -webkit-text-stroke: 3px var(--secondary-color);
-  font-size: 3.5rem;
+  color: var(--tertiary-color) !important;
+  -webkit-text-stroke: 3px var(--secondary-color) !important;
+  font-size: 3.5rem !important;
 }
 
 .navbar-toggler {

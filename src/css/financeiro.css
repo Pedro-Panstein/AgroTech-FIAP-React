@@ -1,0 +1,37 @@
+/* Página financeiro */
+.card-bg-green {
+  background: radial-gradient(
+    circle 300px at center,
+    var(--tertiary-color),
+    var(--secondary-opacity)
+  );
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card-bg-red {
+  background: radial-gradient(
+    circle 300px at center,
+    rgba(255, 0, 0, 0.3),
+    rgba(226, 139, 139, 0.2)
+  );
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card-bg-blue {
+  background: radial-gradient(
+    circle 300px at center,
+    rgba(0, 0, 255, 0.3),
+    rgba(113, 125, 233, 0.2)
+  );
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+

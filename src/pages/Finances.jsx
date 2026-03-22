@@ -9,6 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import plusIcon from "./../assets/AiOutlinePlus.png";
 import filterIcon from "./../assets/filter-icon.png";
+import "../css/financeiro.css";
 
 export default function Finances() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -111,12 +112,12 @@ export default function Finances() {
 
   return (
     <div className="main-background-color">
-      <main className="bg h-auto p-4 p-md-5 d-flex flex-column gap-5">
+      <main className="h-auto gap-5 p-4 bg p-md-5 d-flex flex-column">
         <div>
-          <h2 className="fw-bold mb-3">Financeiro</h2>
+          <h2 className="mb-3 fw-bold">Financeiro</h2>
 
-          <div className="w-100 d-flex flex-wrap p-4 bg-secondary-opacity rounded gap-2 gap-md-3 justify-content-between align-items-center">
-            <div className="d-flex gap-4">
+          <div className="flex-wrap gap-2 p-4 rounded w-100 d-flex bg-secondary-opacity gap-md-3 justify-content-between align-items-center">
+            <div className="gap-4 d-flex">
               <ActionButton
                 icon={plusIcon}
                 label="Adicionar"
@@ -125,9 +126,9 @@ export default function Finances() {
               <ActionButton icon={filterIcon} label="Filtros" />
             </div>
 
-            <div className="d-flex gap-4 ">
+            <div className="gap-4 d-flex ">
               <label
-                className="d-flex gap-2 align-items-center py-1 px-3 bg-tertiary rounded m-0 outline-2"
+                className="gap-2 px-3 py-1 m-0 rounded d-flex align-items-center bg-tertiary outline-2"
                 style={{ cursor: "pointer" }}
               >
                 <UploadIcon />
@@ -141,7 +142,7 @@ export default function Finances() {
               </label>
 
               <button
-                className="d-flex gap-2 align-items-center py-1 px-3 bg-tertiary rounded outline-2"
+                className="gap-2 px-3 py-1 rounded d-flex align-items-center bg-tertiary outline-2"
                 onClick={exportarCSV}
               >
                 <DownloadIcon />
@@ -158,12 +159,12 @@ export default function Finances() {
         </div>
 
         <div>
-          <div className="d-flex flex-column bg-tertiary p-3 rounded-top">
+          <div className="p-3 d-flex flex-column bg-tertiary rounded-top">
             <span className="fs-5 fw-bold">Transações recentes</span>
             <span>Suas ultimas 10 transações registradas</span>
           </div>
 
-          <div className="d-flex flex-column gap-3 p-3 bg-tertiary-opacity rounded-bottom">
+          <div className="gap-3 p-3 d-flex flex-column bg-tertiary-opacity rounded-bottom">
             {ultimasTransacoes.length > 0 ? (
               ultimasTransacoes.map((t, index) => (
                 <Transaction
@@ -174,7 +175,7 @@ export default function Finances() {
                 />
               ))
             ) : (
-              <div className="text-center p-3 text-muted">
+              <div className="p-3 text-center text-muted">
                 Nenhuma transação registrada ainda.
               </div>
             )}
@@ -184,7 +185,7 @@ export default function Finances() {
         {/* Botão flutuante do Chat */}
         <button
           id="chat-ball"
-          className="position-fixed bottom-0 end-0 m-4 p-3 rounded-circle bg-success text-white border-0 shadow-lg"
+          className="bottom-0 p-3 m-4 text-white border-0 shadow-lg position-fixed end-0 rounded-circle bg-success"
           style={{ width: "60px", height: "60px", zIndex: 1000 }}
           onClick={toggleChat}
         >
